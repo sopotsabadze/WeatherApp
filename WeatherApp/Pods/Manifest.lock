@@ -1,0 +1,22 @@
+PODS:
+  - SDWebImage (5.10.3):
+    - SDWebImage/Core (= 5.10.3)
+  - SDWebImage/Core (5.10.3)
+  - UPCarouselFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - SDWebImage (~> 5.0)
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - UPCarouselFlowLayout
+
+SPEC CHECKSUMS:
+  SDWebImage: e378178472b735e84b007bfb55514c97948a0598
+  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
+
+PODFILE CHECKSUM: a5ddf32f6be496897db54087f078a50bcefbcad2
+
+COCOAPODS: 1.10.1

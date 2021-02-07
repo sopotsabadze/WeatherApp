@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ForecastCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CGG-II-mU2">
+                        <rect key="frame" x="20" y="19.5" width="32.5" height="27"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CGG-II-mU2" secondAttribute="height" multiplier="1:1" id="c0o-i1-vLl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCl-hZ-y4Q">
+                        <rect key="frame" x="72.5" y="14.5" width="37" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broken Clouds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-IM-jaK">
+                        <rect key="frame" x="72.5" y="33.5" width="94" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-2°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY8-dl-tw5">
+                        <rect key="frame" x="333" y="18" width="51" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" name="accent"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="bg-gradient-start"/>
+                <constraints>
+                    <constraint firstItem="kCl-hZ-y4Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-9.5" id="3MC-HN-oqF"/>
+                    <constraint firstItem="CGG-II-mU2" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="6WY-0T-b6h"/>
+                    <constraint firstItem="mY8-dl-tw5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Qk-rV-F1m"/>
+                    <constraint firstAttribute="trailing" secondItem="mY8-dl-tw5" secondAttribute="trailing" constant="16" id="PpF-Hb-XGW"/>
+                    <constraint firstItem="gCh-IM-jaK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="9.5" id="Yje-kB-SPo"/>
+                    <constraint firstItem="CGG-II-mU2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m14-Rp-Oyp"/>
+                    <constraint firstItem="gCh-IM-jaK" firstAttribute="leading" secondItem="CGG-II-mU2" secondAttribute="trailing" constant="20" id="pHc-nd-kYe"/>
+                    <constraint firstItem="kCl-hZ-y4Q" firstAttribute="leading" secondItem="CGG-II-mU2" secondAttribute="trailing" constant="20" id="rtq-8m-MDi"/>
+                    <constraint firstItem="CGG-II-mU2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tfR-of-6Ro"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="icon" destination="CGG-II-mU2" id="syw-pk-lTa"/>
+                <outlet property="message" destination="gCh-IM-jaK" id="baD-Hn-ejm"/>
+                <outlet property="temperature" destination="mY8-dl-tw5" id="A00-bO-3SH"/>
+                <outlet property="time" destination="kCl-hZ-y4Q" id="Uk8-Wz-b5A"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="133.92857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cloud.fill" catalog="system" width="128" height="84"/>
+        <namedColor name="accent">
+            <color red="0.9882352941176471" green="0.91764705882352937" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bg-gradient-start">
+            <color red="0.40000000000000002" green="0.51372549019607838" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

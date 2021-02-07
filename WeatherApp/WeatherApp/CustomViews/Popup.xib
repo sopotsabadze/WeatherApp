@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Popup" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addLabel" destination="3M9-2h-vEf" id="FRw-Oi-OgU"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Cq4-td-ZB1"/>
+                <outlet property="loader" destination="M6b-P2-BIh" id="Nc1-59-ImA"/>
+                <outlet property="textField" destination="V03-sy-gXT" id="dNm-c7-eY0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNj-8t-fdY">
+                    <rect key="frame" x="162.33333333333334" y="46.333333333333336" width="75.333333333333343" height="24.000000000000007"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter City name you wish to add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-xO-B0O">
+                    <rect key="frame" x="83.333333333333329" y="89.333333333333329" width="233.33333333333337" height="19.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V03-sy-gXT">
+                    <rect key="frame" x="98.666666666666686" y="126.66666666666669" width="203" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="hgn-Eo-9tw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3h-fm-rbU">
+                    <rect key="frame" x="170" y="208" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7e9-Hp-B0S"/>
+                        <constraint firstAttribute="width" secondItem="W3h-fm-rbU" secondAttribute="height" multiplier="1:1" id="cXV-JQ-Glg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <state key="normal">
+                        <color key="titleColor" name="green-gradient-start"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addButtonDidTap" destination="-1" eventType="touchUpInside" id="cf5-oC-gnl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M9-2h-vEf">
+                    <rect key="frame" x="170" y="208" width="60" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" name="green-gradient-start"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="M6b-P2-BIh">
+                    <rect key="frame" x="170" y="208" width="60" height="60"/>
+                    <color key="tintColor" name="green-gradient-start"/>
+                    <color key="color" name="green-gradient-start"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" name="green-gradient-start"/>
+            <constraints>
+                <constraint firstItem="M6b-P2-BIh" firstAttribute="centerY" secondItem="3M9-2h-vEf" secondAttribute="centerY" id="6Ca-ZT-qN3"/>
+                <constraint firstItem="V03-sy-gXT" firstAttribute="top" secondItem="hOX-xO-B0O" secondAttribute="bottom" constant="18" id="9Aa-WX-Xxh"/>
+                <constraint firstItem="M6b-P2-BIh" firstAttribute="height" secondItem="3M9-2h-vEf" secondAttribute="height" id="CSt-Ou-Fje"/>
+                <constraint firstItem="M6b-P2-BIh" firstAttribute="width" secondItem="3M9-2h-vEf" secondAttribute="width" id="DTv-mO-QBP"/>
+                <constraint firstItem="3M9-2h-vEf" firstAttribute="width" secondItem="W3h-fm-rbU" secondAttribute="width" id="E3u-NY-Pfq"/>
+                <constraint firstItem="V03-sy-gXT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-6" id="Ean-S6-WdB"/>
+                <constraint firstItem="W3h-fm-rbU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XWA-sM-ylS"/>
+                <constraint firstItem="3M9-2h-vEf" firstAttribute="centerY" secondItem="W3h-fm-rbU" secondAttribute="centerY" id="Ytu-hY-UV5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="W3h-fm-rbU" secondAttribute="bottom" constant="32" id="cve-mc-mlw"/>
+                <constraint firstItem="3M9-2h-vEf" firstAttribute="centerX" secondItem="W3h-fm-rbU" secondAttribute="centerX" id="ePD-PY-dc5"/>
+                <constraint firstItem="V03-sy-gXT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jbj-dH-Kwb"/>
+                <constraint firstItem="V03-sy-gXT" firstAttribute="width" secondItem="hOX-xO-B0O" secondAttribute="width" multiplier="0.87" id="lTo-Up-yrR"/>
+                <constraint firstItem="M6b-P2-BIh" firstAttribute="centerX" secondItem="3M9-2h-vEf" secondAttribute="centerX" id="mi3-rS-jRY"/>
+                <constraint firstItem="hOX-xO-B0O" firstAttribute="top" secondItem="nNj-8t-fdY" secondAttribute="bottom" constant="19" id="oz7-cK-Loh"/>
+                <constraint firstItem="hOX-xO-B0O" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rag-w1-WYz"/>
+                <constraint firstItem="3M9-2h-vEf" firstAttribute="height" secondItem="W3h-fm-rbU" secondAttribute="height" id="sw7-Hu-x2h"/>
+                <constraint firstItem="nNj-8t-fdY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v7U-Xk-vQf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="32"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="131.8840579710145" y="142.66304347826087"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="green-gradient-start">
+            <color red="0.5" green="0.87699997425079346" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
